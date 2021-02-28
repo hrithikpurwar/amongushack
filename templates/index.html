@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>DietIQ</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+    <!-- owl css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" >
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" >
+    <!-- responsive-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" >
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><[endif]>
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="{{url_for('static', filename='images/loading.gif')}}" alt="" /></div>
+    </div>
+
+    <div class="wrapper">
+    <!-- end loader -->
+
+
+    <div id="content">
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="full">
+                        <a  href="index.html"><img src="{{url_for('static', filename='images/logo.png')}}" alt="#" style: width='40%'/></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="full">
+                        <div class="right_header_info">
+                            <ul>
+                                <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="{{url_for('static', filename='images/phone_icon.png')}}" alt="#"><a href="#">9876543210</a></li>
+                                <li class="dinone"><img style="margin-right: 15px;" src="{{url_for('static', filename='images/mail_icon.png')}}" alt="#"><a href="#">dietiq@gmail.com</a></li>
+                                <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="{{url_for('static', filename='images/location_icon.png')}}" alt="#"><a href="#">VIT,VELLORE</a></li>
+                                <li class="button_user"><a class="button" id="object1" href="#">GET SET DIET</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start slider section -->
+    <div class="slider_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div id="main_slider" class="carousel vert slide" data-ride="carousel" data-interval="5000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="slider_cont">
+                                                <h3>GIFT YOURSELF WITH A HEALTHY DIET</h3>
+                                                <p>The groundwork of all happiness is health.<br> <br> ~Leigh Hunt</p>
+                                                <a class="main_bt_border" id="object2" href="#title">Plan it now!</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="slider_image full text_align_center">
+                                                <img class="img-responsive" src="https://www.health.harvard.edu/media/content/images/DIET-made-of-sliced-vegetables-87883148(1).jpg" alt="#" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="slider_cont">
+                                                <h3>Discover diets<br>that will lead to a healthy version of you.</h3>
+                                            
+                                                <p>
+                                                    <a class="main_bt_border" id="object3" href="#title">View Diet Plans!</a>
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 full text_align_center">
+                                            <div class="slider_image">
+                                                <img class="img-responsive" src="https://images.everydayhealth.com/images/diet-nutrition/mediterranean-diet/mediterranean-diet-food-list-meal-plan-722x406.jpg?sfvrsn=da69b6eb_0" alt="#" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                                <i class="fa fa-angle-up"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end slider section -->
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+    <!-- section 
+    <section class="resip_section">
+        <div class="container">
+            <div class="row">
+         <div class="col-md-12">
+       <div class="ourheading">
+    <h2>We accept All types of food !</h2>
+  </div>
+</div>    
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs1.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Continental</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs2.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Chinese</h3>
+        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs3.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Non-vegan</h3>
+                
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs4.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>vegan</h3>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs5.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Some Extras Too!</h3>
+                        
+                    </div>
+                </div>
+                
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<div class="bg_bg"> --->
+
+<!-- about -->
+<div class="about">
+    <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+             <div class="title">
+                <!-- <i><img src="{{url_for('static', filename='images/logo.png')}}" alt="#"style: width='10%'/></i> -->
+                <h2>About Our Initiative</h2>
+                <span>We relieve the normal public from the hassle of planning the diet. <br>And provide the platform for diet planning and outcomes predictions of the respective diet.
+                </span>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+             <div class="about_box">
+                 <h3>...</h3>
+                 <p>A calorie is a calorie, the advice goes. Eat too many ... gain weight. Eat fewer ... lose weight.<br> But many believe weight loss is more than a calorie equation, with so-called new-and-improved ways to lose weight being ever popular.<br> 
+                    Having so many diet options makes it difficult to know which ones to trust.<br> DietIQ has made it easier for you to achieve and maintain a healthy weight. </p>
+                 <a href="https://www.who.int/initiatives/behealthy/healthy-diet#:~:text=A%20healthy%20diet%20is%20essential,are%20essential%20for%20healthy%20diet.">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+             </div>
+         </div>
+           <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
+             <div class="about_img">
+                 <figure><img src="https://i.pinimg.com/originals/a7/f0/58/a7f0589d2f19e57b3d2ae9f6b739f39f.jpg" alt="#/" style: width='75%''></figure>
+             </div>
+         </div>      
+       </div> 
+    </div>
+</div>
+<!-- end about -->
+
+<!-- blog -->
+<br>
+<br>
+<br>
+<br>
+
+<!-- Our Client -->
+<div class="Client">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <!-- <i><img src="{{url_for('static', filename='images/logo.png')}}" alt="#"style: width='10%'/></i> -->
+          <h2>OUR DIET PLANS</h2>
+        </div>
+      </div>
+    </div>
+  <div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+         <div class="Client_box">
+           <img src="https://www.weightlossresources.co.uk/pimg/wlr/s/super-tasty-diet-plan-article.jpg" alt="#"/>
+           <h3>DIET 1</h3>
+           <h3>Diet Plan For Foodies</h3>
+           <p>Who says diets have to be bland and boring? Not us.
+
+            Feast your eyes on The Super Tasty Diet Plan. Packed with delish dinners, lush lunches and scrummy breakfasts.</p>
+           <i><img src="{{url_for('static', filename='images/client_icon.png')}}" alt="#"/></i>
+           <p><br> <br> <br> <br> <br></p>
+           
+         </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-80">
+        <div class="Client_box">
+          <img src="https://www.weightlossresources.co.uk/pimg/wlr/v/vegan-diet-plan-article.jpg" alt="#"/>
+          <h3>DIET 2</h3>
+          <h3>Diet Plan For Vegans</h3>
+          <p>Wether you're new to veganism or have been eating this way for years, it's essential to know that you're getting enough protein when cutting out animal products.
+
+            This plan is designed to show you how to get all the essential nutrients and the right amount of calories to lose weight.</p>
+          <i><img src="{{url_for('static', filename='images/client_icon.png')}}" alt="#"/></i>
+        </div>
+     </div>
+     
+     <div class="col-lg-4 col-md-6 col-sm-80">
+        <div class="Client_box">
+          <img src="https://www.weightlossresources.co.uk/pimg/wlr/h/high-fibre-diet-plan-article.jpg" alt="#"/>
+          <h3>DIET 3</h3>
+          <h3>High Fibre Diet Plan</h3>
+          <p>High fibre's fallen out of favour for weight loss since the F-Plan days. We're all for a revival!
+
+            As well as being crucial for good health, high fibre food is really good at filling you up - helpful for both losing weight now and for keeping your weight steady in the future.</p>
+          <i><img src="{{url_for('static', filename='images/client_icon.png')}}" alt="#"/></i>
+          <p><br> </p>
+        </div>
+     </div>
+    </div>
+  </div>
+</div>  
+</div>
+<!-- end Our Client -->
+</div>
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class=" col-md-12">
+                    <h2>Which Diet Plan<strong class="white"> To Follow?</strong></h2>
+                  </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                      
+                        <form class="main_form" action="{{url_for('predict')}}" method="post">
+                            <div class="row">
+                             
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input id="Age" required="required" class="form-control" placeholder="Age" type="text" name="Age">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input id="Height" required="required" class="form-control" placeholder="Height" type="text" name="Height">
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <input id="first" class="form-control" placeholder="PreWeight" type="number" name="preweight">
+                                </div>
+<br>
+                                <select class="col-xl-12 col-lg-12 col-md-12 col-sm-12"  name="Diet" id="resea" required="required">
+                                    <option selected>Diet</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+
+                                <select class="col-xl-12 col-lg-12 col-md-12 col-sm-12"  name="gender" id="resea" required="required">
+                                    <option selected>Gender</option>
+                                    <option value="0">Female</option>
+                                    <option value="1">Male</option>
+                                  </select>
+
+                                  
+
+                                
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <button class="send" id = "object2" href="#">Send</button>
+                                </div>
+                                <section id="output1">
+                                  <br><br><h3>{{ prediction_text }}</h3>
+                                      </section>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer_logo">
+                          <a href="index.html"><img src="{{url_for('static', filename='images/logo.png')}}" alt="logo" style: width='10%' /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                    </div>
+                    <div class="col-md-12">
+                        <div class="new">
+                            <h3>Newsletter</h3>
+                            <form class="newtetter">
+                                <input class="tetter" placeholder="Your email" type="text" name="Your email">
+                                <button class="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                </div>
+            </div>
+        </div>
+    </fooetr>
+    <!-- end footer -->
+
+    </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- Javascript files-->
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/custom.js')}}"></script>
+     <script src="{{url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+    
+     <script src="{{url_for('static', filename='js/jquery-3.0.0.min.js')}}"></script>
+   <script type="text/javascript">
+        $(document).ready(function() {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function() {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+    <style>
+        #resea {
+            width: 40px;
+            height: 43px;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 15px;
+            margin-left: 15px;
+        }
+#resea:hover {
+            background-color:black;
+            color: white;
+        }
+
+        #Age
+        {
+            width: 540px; 
+        }
+        #Height
+        {
+            width: 540px; 
+        }
+        #first
+        {
+            width: 540px; 
+        }
+
+    #owl-demo .item{
+        margin: 3px;
+    }
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    #rm{
+        color:white
+
+    }
+    #rm:hover{
+            color:yellow
+    }
+    </style>
+
+     
+      <script>
+          $('#object1').click(function(){
+$(document).scrollTop(1400) // any value you need
+});
+$('#object2').click(function(){
+    //from cache
+//window.location.reload(); 
+//window.location.reload(false);
+// from server
+//window.location.reload(true);
+$(document).scrollTop(2500) // any value you need
+});
+$('#object3').click(function(){
+    //from cache
+//window.location.reload(); 
+//window.location.reload(false);
+// from server
+//window.location.reload(true);
+$(document).scrollTop(1400) // any value you need
+});
+         $(document).ready(function() {
+           var owl = $('.owl-carousel');
+           owl.owlCarousel({
+             margin: 10,
+             nav: true,
+             loop: true,
+             responsive: {
+               0: {
+                 items: 1
+               },
+               600: {
+                 items: 2
+               },
+               1000: {
+                 items: 5
+               }
+             }
+           })
+         })
+         
+      </script>
+
+</body>
+
+</html>
